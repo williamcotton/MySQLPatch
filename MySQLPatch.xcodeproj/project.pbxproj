@@ -25,8 +25,6 @@
 		16BA95420A7EB2EB001E4983 /* MySQLPatchPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* MySQLPatchPlugIn.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
-		DA23AF41106C3D1400E452E5 /* libmysqlclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23AF40106C3D1400E452E5 /* libmysqlclient.a */; };
-		DA23AF44106C3D1800E452E5 /* libmysqlclient.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = DA23AF40106C3D1400E452E5 /* libmysqlclient.a */; };
 		DABBA772106A9DDD003B5FA3 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = DABBA754106A9CAA003B5FA3 /* Settings.xib */; };
 		DACFBB56106B55780033BD92 /* dabmob-patch.png in Resources */ = {isa = PBXBuildFile; fileRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */; };
 /* End PBXBuildFile section */
@@ -41,19 +39,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DA23AF04106C36F200E452E5 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				DA23AF44106C3D1800E452E5 /* libmysqlclient.a in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		16AA5C440A7EEE7300888E31 /* MySQLPatch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MySQLPatch_Prefix.pch; sourceTree = "<group>"; };
@@ -62,7 +47,6 @@
 		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* MySQLPatch.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySQLPatch.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA23AF40106C3D1400E452E5 /* libmysqlclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmysqlclient.a; sourceTree = "<group>"; };
 		DABBA755106A9CAA003B5FA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Settings.xib; sourceTree = "<group>"; };
 		DACFBB55106B55780033BD92 /* dabmob-patch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dabmob-patch.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA23AF41106C3D1400E452E5 /* libmysqlclient.a in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */,
 			);
@@ -105,7 +88,6 @@
 		089C167CFE841241C02AAC07 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DA23AF40106C3D1400E452E5 /* libmysqlclient.a */,
 				DACFBB55106B55780033BD92 /* dabmob-patch.png */,
 				DABBA754106A9CAA003B5FA3 /* Settings.xib */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
@@ -145,7 +127,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "MySQLPatch" */;
 			buildPhases = (
-				DA23AF04106C36F200E452E5 /* CopyFiles */,
 				DABBA76F106A9DD9003B5FA3 /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
@@ -252,13 +233,10 @@
 				HEADER_SEARCH_PATHS = /usr/local/mysql/include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/usr/local/mysql-5.0.51a-osx10.4-i686/lib\"",
-					"\"$(SRCROOT)\"",
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/mysql/lib;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
+					"-lmysqlclient",
 					"-lm",
 					"-lz",
 				);
@@ -280,13 +258,10 @@
 				HEADER_SEARCH_PATHS = /usr/local/mysql/include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/usr/local/mysql-5.0.51a-osx10.4-i686/lib\"",
-					"\"$(SRCROOT)\"",
-				);
+				LIBRARY_SEARCH_PATHS = /usr/local/mysql/lib;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
+					"-lmysqlclient",
 					"-lm",
 					"-lz",
 				);
