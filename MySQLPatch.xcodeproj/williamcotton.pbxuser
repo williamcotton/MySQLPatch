@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Release;
+		activeExecutable = 23E90CA60A83C53500A6A40A /* Quartz Composer */;
+		activeTarget = 233E2C640A83C768005A62DF /* Build & Copy */;
+		addToTargets = (
+			8D5B49AC048680CD000E48DA /* MySQLPatch */,
+		);
+		codeSenseManager = 23E90CA50A83C4F400A6A40A /* Code sense */;
+		executables = (
+			23E90CA60A83C53500A6A40A /* Quartz Composer */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					767.58349609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					880,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					856,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					840,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 275522224;
+			PBXWorkspaceStateSaveDate = 275522224;
+		};
+		perUserProjectItems = {
+			DA23AD7C106C22CC00E452E5 /* PBXBookmark */ = DA23AD7C106C22CC00E452E5 /* PBXBookmark */;
+			DA23AD91106C231700E452E5 /* PBXBookmark */ = DA23AD91106C231700E452E5 /* PBXBookmark */;
+			DA23AD96106C236E00E452E5 /* PBXBookmark */ = DA23AD96106C236E00E452E5 /* PBXBookmark */;
+			DA23AD9A106C239400E452E5 /* PBXBookmark */ = DA23AD9A106C239400E452E5 /* PBXBookmark */;
+			DA23AD9E106C23D300E452E5 /* PBXBookmark */ = DA23AD9E106C23D300E452E5 /* PBXBookmark */;
+			DA23ADA2106C243100E452E5 /* PBXBookmark */ = DA23ADA2106C243100E452E5 /* PBXBookmark */;
+			DA23ADA7106C24BE00E452E5 /* PBXBookmark */ = DA23ADA7106C24BE00E452E5 /* PBXBookmark */;
+			DABBA57A106968F2003B5FA3 = DABBA57A106968F2003B5FA3 /* PBXTextBookmark */;
+			DABBA57B106968F2003B5FA3 = DABBA57B106968F2003B5FA3 /* PBXTextBookmark */;
+			DABBA5D91069700D003B5FA3 = DABBA5D91069700D003B5FA3 /* PBXTextBookmark */;
+			DABBA5EC1069712F003B5FA3 = DABBA5EC1069712F003B5FA3 /* PBXTextBookmark */;
+			DABBA76C106A9DD9003B5FA3 = DABBA76C106A9DD9003B5FA3 /* PlistBookmark */;
+			DABBA7CA106AC0A8003B5FA3 = DABBA7CA106AC0A8003B5FA3 /* PBXBookmark */;
+			DABBA7CB106AC0A8003B5FA3 = DABBA7CB106AC0A8003B5FA3 /* PBXTextBookmark */;
+			DABBA7CC106AC0A8003B5FA3 = DABBA7CC106AC0A8003B5FA3 /* PBXTextBookmark */;
+			DABBA7CE106AC0A8003B5FA3 = DABBA7CE106AC0A8003B5FA3 /* PBXBookmark */;
+			DACFBB59106C04F80033BD92 = DACFBB59106C04F80033BD92 /* PlistBookmark */;
+			DACFBB5A106C04F80033BD92 = DACFBB5A106C04F80033BD92 /* PBXBookmark */;
+			DACFBB5B106C04F80033BD92 = DACFBB5B106C04F80033BD92 /* PlistBookmark */;
+			DACFBB5C106C04F80033BD92 = DACFBB5C106C04F80033BD92 /* PBXBookmark */;
+		};
+		sourceControlManager = 23E90CA40A83C4F400A6A40A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	16AA5C440A7EEE7300888E31 /* MySQLPatch_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1058, 469}}";
+			sepNavSelRange = "{49, 0}";
+			sepNavVisRange = "{0, 50}";
+		};
+	};
+	16BA95400A7EB2EB001E4983 /* MySQLPatchPlugIn.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1058, 512}}";
+			sepNavSelRange = "{44, 0}";
+			sepNavVisRange = "{0, 744}";
+			sepNavVisRect = "{{0, 0}, {839, 550}}";
+		};
+	};
+	16BA95410A7EB2EB001E4983 /* MySQLPatchPlugIn.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {812, 4096}}";
+			sepNavSelRange = "{5993, 0}";
+			sepNavVisRange = "{5214, 602}";
+			sepNavWindowFrame = "{{15, 151}, {839, 722}}";
+		};
+	};
+	233E2C640A83C768005A62DF /* Build & Copy */ = {
+		activeExec = 0;
+	};
+	23E90CA40A83C4F400A6A40A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	23E90CA50A83C4F400A6A40A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	23E90CA60A83C53500A6A40A /* Quartz Composer */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		launchableReference = 23E90CA70A83C53500A6A40A /* Quartz Composer.app */;
+		libgmallocEnabled = 0;
+		name = "Quartz Composer";
+		savedGlobals = {
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	23E90CA70A83C53500A6A40A /* Quartz Composer.app */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = wrapper.application;
+		name = "Quartz Composer.app";
+		path = "/Developer/Applications/Quartz Composer.app";
+		sourceTree = "<absolute>";
+	};
+	8D5B49AC048680CD000E48DA /* MySQLPatch */ = {
+		activeExec = 0;
+	};
+	DA23AD7C106C22CC00E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DA23AD91106C231700E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DA23AD96106C236E00E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DA23AD9A106C239400E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DA23AD9E106C23D300E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DA23ADA2106C243100E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DA23ADA7106C24BE00E452E5 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DABBA57A106968F2003B5FA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16BA95410A7EB2EB001E4983 /* MySQLPatchPlugIn.m */;
+		name = "MySQLPatchPlugIn.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1202;
+		vrLoc = 0;
+	};
+	DABBA57B106968F2003B5FA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16BA95400A7EB2EB001E4983 /* MySQLPatchPlugIn.h */;
+		name = "MySQLPatchPlugIn.h: 28";
+		rLen = 0;
+		rLoc = 742;
+		rType = 0;
+		vrLen = 898;
+		vrLoc = 0;
+	};
+	DABBA5D91069700D003B5FA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16AA5C440A7EEE7300888E31 /* MySQLPatch_Prefix.pch */;
+		name = "MySQLPatch_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 50;
+		vrLoc = 0;
+	};
+	DABBA5EC1069712F003B5FA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16AA5C440A7EEE7300888E31 /* MySQLPatch_Prefix.pch */;
+		name = "MySQLPatch_Prefix.pch: 3";
+		rLen = 0;
+		rLoc = 49;
+		rType = 0;
+		vrLen = 50;
+		vrLoc = 0;
+	};
+	DABBA76C106A9DD9003B5FA3 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIdentifier,
+		);
+		name = /Users/williamcotton/Projects/qc/MySQLPatch/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	DABBA779106AA10B003B5FA3 /* rby-qc.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = "rby-qc.png";
+		path = "/Users/williamcotton/Projects/qc/MySQLPatch/rby-qc.png";
+		sourceTree = "<absolute>";
+	};
+	DABBA7CA106AC0A8003B5FA3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DABBA779106AA10B003B5FA3 /* rby-qc.png */;
+	};
+	DABBA7CB106AC0A8003B5FA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16BA95400A7EB2EB001E4983 /* MySQLPatchPlugIn.h */;
+		name = "MySQLPatchPlugIn.h: 3";
+		rLen = 0;
+		rLoc = 44;
+		rType = 0;
+		vrLen = 744;
+		vrLoc = 0;
+	};
+	DABBA7CC106AC0A8003B5FA3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 16BA95410A7EB2EB001E4983 /* MySQLPatchPlugIn.m */;
+		name = "MySQLPatchPlugIn.m: 3";
+		rLen = 0;
+		rLoc = 44;
+		rType = 0;
+		vrLen = 1074;
+		vrLoc = 0;
+	};
+	DABBA7CE106AC0A8003B5FA3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DABBA779106AA10B003B5FA3 /* rby-qc.png */;
+	};
+	DACFBB59106C04F80033BD92 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleVersion,
+		);
+		name = /Users/williamcotton/Projects/qc/MySQLPatch/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	DACFBB5A106C04F80033BD92 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+	DACFBB5B106C04F80033BD92 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D5B49B7048680CD000E48DA /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleVersion,
+		);
+		name = /Users/williamcotton/Projects/qc/MySQLPatch/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	DACFBB5C106C04F80033BD92 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = DACFBB55106B55780033BD92 /* dabmob-patch.png */;
+	};
+}
