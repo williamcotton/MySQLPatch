@@ -24,8 +24,8 @@ Please edit the Build parameters of MySQLPatch in the Targets drop down and chan
 
 Other Linker Flags: -lmysqlclient -lz -lm  
 Header Search Paths: /usr/local/mysql/include  
-Library Search Paths: //usr/local/mysql/lib  
+Library Search Paths: /usr/local/mysql/lib  
 
 ## Static Library ##
 
-There is a branch called 'static_library' contained a copy of libmysqlclient.a. I haven't tested it on another machine, but it might work properly.
+There is a branch called 'static_library' containing a copy of libmysqlclient.a. I haven't tested it on another machine, but it might work properly.
