@@ -47,6 +47,7 @@
 		16BA96300A7EB9AC001E4983 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		8D5B49B6048680CD000E48DA /* MySQLPatch.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySQLPatch.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA23AF5F106C3E3800E452E5 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		DABBA755106A9CAA003B5FA3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Settings.xib; sourceTree = "<group>"; };
 		DACFBB55106B55780033BD92 /* dabmob-patch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dabmob-patch.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +92,7 @@
 				DACFBB55106B55780033BD92 /* dabmob-patch.png */,
 				DABBA754106A9CAA003B5FA3 /* Settings.xib */,
 				8D5B49B7048680CD000E48DA /* Info.plist */,
+				DA23AF5F106C3E3800E452E5 /* README.markdown */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
