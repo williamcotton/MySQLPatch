@@ -16,7 +16,7 @@
 
 @implementation MySQLPatchPlugIn
 
-@dynamic inputSQL, inputHost, inputUser, inputPassword, inputDatabase;
+@dynamic inputSQL, inputHost, inputUser, inputPassword, inputDatabase, inputUpdateSignal;
 @dynamic outputRows, outputErrorMessage;
 
 @synthesize previousSQL, returnedRows;
@@ -51,6 +51,10 @@
 	if([key isEqualToString:@"inputDatabase"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
 				@"Database", QCPortAttributeNameKey,
+				nil];
+	if([key isEqualToString:@"inputUpdateSignal"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+				@"Update Signal", QCPortAttributeNameKey,
 				nil];
 	if([key isEqualToString:@"outputRows"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
@@ -220,8 +224,6 @@
 		
 		return YES;
 		
-		[returnedRows release];
-		
 	}
 	
 }
@@ -235,8 +237,6 @@
 
 - (void) stopExecution:(id<QCPlugInContext>)context
 {
-	
-	[returnedRows release];
 	
 	/*
 	Called by Quartz Composer when rendering of the composition stops: perform any required cleanup for the plug-in.

@@ -145,10 +145,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "MySQLPatch" */;
 			buildPhases = (
-				DA23AF04106C36F200E452E5 /* CopyFiles */,
 				DABBA76F106A9DD9003B5FA3 /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
+				DA23AF04106C36F200E452E5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -252,13 +252,10 @@
 				HEADER_SEARCH_PATHS = /usr/local/mysql/include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/usr/local/mysql-5.0.51a-osx10.4-i686/lib\"",
-					"\"$(SRCROOT)\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
+					"-lmysqlclient",
 					"-lm",
 					"-lz",
 				);
@@ -280,13 +277,10 @@
 				HEADER_SEARCH_PATHS = /usr/local/mysql/include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Graphics/Quartz Composer Plug-Ins";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"/usr/local/mysql-5.0.51a-osx10.4-i686/lib\"",
-					"\"$(SRCROOT)\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
+					"-lmysqlclient",
 					"-lm",
 					"-lz",
 				);
