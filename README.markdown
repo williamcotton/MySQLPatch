@@ -8,17 +8,17 @@ The master branch contains an Xcode project for dynamically linking to libmysqlc
 
 From the command line:
 
-> $ mysql_config
-> Usage: /usr/local/mysql/bin/mysql_config [OPTIONS]
-> Options:
->  --cflags         [-I/usr/local/mysql/include -Os -arch i386 -fno-common]
->  --include        [-I/usr/local/mysql/include]
->  --libs           [-L/usr/local/mysql/lib -lmysqlclient -lz -lm]
->  --libs_r         [-L/usr/local/mysql/lib -lmysqlclient_r -lz -lm]
->  --socket         [/tmp/mysql.sock]
->  --port           [3306]
->  --version        [5.0.51a]
->  --libmysqld-libs [-L/usr/local/mysql/lib -lmysqld -lz -lm]
+> $ mysql_config  
+> Usage: /usr/local/mysql/bin/mysql_config [OPTIONS]  
+> Options:  
+>  --cflags         [-I/usr/local/mysql/include -Os -arch i386 -fno-common]  
+>  --include        [-I/usr/local/mysql/include]  
+>  --libs           [-L/usr/local/mysql/lib -lmysqlclient -lz -lm]  
+>  --libs_r         [-L/usr/local/mysql/lib -lmysqlclient_r -lz -lm]  
+>  --socket         [/tmp/mysql.sock]  
+>  --port           [3306]  
+>  --version        [5.0.51a]  
+>  --libmysqld-libs [-L/usr/local/mysql/lib -lmysqld -lz -lm]  
 
 Please edit the Build parameters of MySQLPatch in the Targets drop down and change the following fields:
 
