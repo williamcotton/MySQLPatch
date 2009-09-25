@@ -22,6 +22,7 @@
 @property(assign) NSString *inputUser;
 @property(assign) NSString *inputPassword;
 @property(assign) NSString *inputDatabase;
+@property(assign) BOOL inputUpdateSignal;
 @property(assign) NSDictionary *outputRows;
 @property(assign) NSString *outputErrorMessage;
 

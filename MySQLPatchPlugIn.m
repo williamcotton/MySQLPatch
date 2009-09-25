@@ -16,7 +16,7 @@
 
 @implementation MySQLPatchPlugIn
 
-@dynamic inputSQL, inputHost, inputUser, inputPassword, inputDatabase;
+@dynamic inputSQL, inputHost, inputUser, inputPassword, inputDatabase, inputUpdateSignal;
 @dynamic outputRows, outputErrorMessage;
 
 @synthesize previousSQL, returnedRows;
@@ -24,8 +24,8 @@
 + (NSDictionary*) attributes
 {
 	/*
-	Return a dictionary of attributes describing the plug-in (QCPlugInAttributeNameKey, QCPlugInAttributeDescriptionKey...).
-	*/
+	 Return a dictionary of attributes describing the plug-in (QCPlugInAttributeNameKey, QCPlugInAttributeDescriptionKey...).
+	 */
 	
 	return [NSDictionary dictionaryWithObjectsAndKeys:kQCPlugIn_Name, QCPlugInAttributeNameKey, kQCPlugIn_Description, QCPlugInAttributeDescriptionKey, nil];
 }
@@ -52,6 +52,10 @@
         return [NSDictionary dictionaryWithObjectsAndKeys:
 				@"Database", QCPortAttributeNameKey,
 				nil];
+	if([key isEqualToString:@"inputUpdateSignal"])
+        return [NSDictionary dictionaryWithObjectsAndKeys:
+				@"Update Signal", QCPortAttributeNameKey,
+				nil];
 	if([key isEqualToString:@"outputRows"])
         return [NSDictionary dictionaryWithObjectsAndKeys:
 				@"Rows", QCPortAttributeNameKey,
@@ -66,8 +70,8 @@
 + (QCPlugInExecutionMode) executionMode
 {
 	/*
-	Return the execution mode of the plug-in: kQCPlugInExecutionModeProvider, kQCPlugInExecutionModeProcessor, or kQCPlugInExecutionModeConsumer.
-	*/
+	 Return the execution mode of the plug-in: kQCPlugInExecutionModeProvider, kQCPlugInExecutionModeProcessor, or kQCPlugInExecutionModeConsumer.
+	 */
 	
 	return kQCPlugInExecutionModeProcessor;
 }
@@ -75,8 +79,8 @@
 + (QCPlugInTimeMode) timeMode
 {
 	/*
-	Return the time dependency mode of the plug-in: kQCPlugInTimeModeNone, kQCPlugInTimeModeIdle or kQCPlugInTimeModeTimeBase.
-	*/
+	 Return the time dependency mode of the plug-in: kQCPlugInTimeModeNone, kQCPlugInTimeModeIdle or kQCPlugInTimeModeTimeBase.
+	 */
 	
 	return kQCPlugInTimeModeNone;
 }
@@ -86,8 +90,8 @@
 	if(self = [super init]) {
 		
 		/*
-		Allocate any permanent resource required by the plug-in.
-		*/
+		 Allocate any permanent resource required by the plug-in.
+		 */
 		
 		returnedRows = [[NSMutableDictionary alloc] initWithCapacity:1];
 		
@@ -99,8 +103,8 @@
 - (void) finalize
 {
 	/*
-	Release any non garbage collected resources created in -init.
-	*/
+	 Release any non garbage collected resources created in -init.
+	 */
 	
 	[super finalize];
 }
@@ -108,8 +112,8 @@
 - (void) dealloc
 {
 	/*
-	Release any resources created in -init.
-	*/
+	 Release any resources created in -init.
+	 */
 	
 	[super dealloc];
 }
@@ -131,9 +135,9 @@
 - (BOOL) startExecution:(id<QCPlugInContext>)context
 {
 	/*
-	Called by Quartz Composer when rendering of the composition starts: perform any required setup for the plug-in.
-	Return NO in case of fatal failure (this will prevent rendering of the composition to start).
-	*/
+	 Called by Quartz Composer when rendering of the composition starts: perform any required setup for the plug-in.
+	 Return NO in case of fatal failure (this will prevent rendering of the composition to start).
+	 */
 	
 	return YES;
 }
@@ -141,8 +145,8 @@
 - (void) enableExecution:(id<QCPlugInContext>)context
 {
 	/*
-	Called by Quartz Composer when the plug-in instance starts being used by Quartz Composer.
-	*/
+	 Called by Quartz Composer when the plug-in instance starts being used by Quartz Composer.
+	 */
 }
 
 - (BOOL) execute:(id<QCPlugInContext>)context atTime:(NSTimeInterval)time withArguments:(NSDictionary*)arguments
@@ -157,7 +161,7 @@
 	database = [self.inputDatabase UTF8String];
 	const char *sqlStatement;
 	sqlStatement = [self.inputSQL UTF8String];
-
+	
 	dbConnection = mysql_init(NULL);
 	
 	/* connect to database */
@@ -172,7 +176,7 @@
 	else {
 		
 		/* ok, we're connected*/
-	
+		
 		MYSQL_RES *res;
 		MYSQL_FIELD *field;
 		MYSQL_ROW row;
@@ -220,8 +224,6 @@
 		
 		return YES;
 		
-		[returnedRows release];
-		
 	}
 	
 }
@@ -229,18 +231,16 @@
 - (void) disableExecution:(id<QCPlugInContext>)context
 {
 	/*
-	Called by Quartz Composer when the plug-in instance stops being used by Quartz Composer.
-	*/
+	 Called by Quartz Composer when the plug-in instance stops being used by Quartz Composer.
+	 */
 }
 
 - (void) stopExecution:(id<QCPlugInContext>)context
 {
 	
-	[returnedRows release];
-	
 	/*
-	Called by Quartz Composer when rendering of the composition stops: perform any required cleanup for the plug-in.
-	*/
+	 Called by Quartz Composer when rendering of the composition stops: perform any required cleanup for the plug-in.
+	 */
 }
 
 @end
